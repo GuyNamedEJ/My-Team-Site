@@ -10,22 +10,22 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <nav className="flex items-center w-[100%] justify-between mb-20 overflow-hidden">
+    <nav className="flex items-center justify-between mb-20 overflow-hidden">
       <img className="w-32" src={Logo} alt="My Team Logo" />
-      <div>
-        <img
-          src={Hamburger}
-          alt=""
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-        />
-      </div>
+
+      <img
+        src={Hamburger}
+        alt=""
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+      />
 
       {/**Mobile Menu */}
       <div
-        className={`absolute bg-police-blue w-[255px] h-[100vh] right-0 top-0 pt-14 flex flex-col transition-all duration-300 ease-in-out bg-mobile-nav bg-no-repeat bg-[bottom_right_-100px] z-10 ${
+        className={`absolute bg-police-blue w-[255px] h-full right-0 top-0 pt-14 flex flex-col transition-all duration-300 ease-in-out bg-mobile-nav bg-no-repeat bg-[bottom_right_-100px] z-10 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
