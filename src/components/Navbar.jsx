@@ -26,7 +26,7 @@ export default function Navbar() {
       {/**Mobile Menu */}
       <div
         className={`absolute bg-police-blue w-[255px] h-full right-0 top-0 pt-14 flex flex-col transition-all duration-300 ease-in-out bg-mobile-nav bg-no-repeat bg-[bottom_right_-100px] z-10 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "block" : "hidden"
         }`}
       >
         <img
