@@ -12,6 +12,7 @@ import Guardian from "../assets/logo-the-guardian.png";
 import Techradar from "../assets/logo-tech-radar.png";
 import Gadgets from "../assets/logo-gadgets-now.png";
 import Pattern1 from "../assets/bg-pattern-home-4-about-3.svg";
+import ProfileCard from "../components/ProfileCard";
 
 export default function About() {
   return (
@@ -29,98 +30,48 @@ export default function About() {
       <section className="relative bg-deep-jungle-green bg-contact-pattern bg-no-repeat bg-[top_-100px_left_-100px] text-center px-6 py-24">
         <h2 className="text-mobile-h2 mb-16">Meet the directors</h2>
         <div className="flex flex-col gap-14">
-          <div className="relative h-[281px] flex flex-col items-center gap-4 bg-dark-green px-6 py-8">
-            <img
-              className="rounded-full w-24 border-2 border-rapture-blue"
-              src={Nikita}
-              alt=""
-            />
-            <div>
-              <p className="text-body-1 text-rapture-blue">Nikita Marks</p>
-              <p className="text-body-2 italic">Founder & CEO</p>
-            </div>
-            <div className="absolute bottom-[-25px] flex items-center justify-center rounded-full bg-light-coral w-[56px] h-[56px] p-5">
-              <img className="w-4" src={Cross} alt="" />
-            </div>
-          </div>
+          <ProfileCard
+            name="Nikita Marks"
+            headshot={Nikita}
+            position="Founder & CEO"
+            quote="“Distributed teams required unique processes. You need to approach work in a new way.”"
+          />
 
-          <div className="relative h-[281px] flex flex-col items-center gap-4 bg-dark-green px-6 py-8">
-            <img
-              className="rounded-full w-24 border-2 border-rapture-blue"
-              src={Christian}
-              alt=""
-            />
-            <div>
-              <p className="text-body-1 text-rapture-blue">Cristian Duncan</p>
-              <p className="text-body-2 italic">Co-founder & COO</p>
-            </div>
-            <div className="absolute bottom-[-25px] flex items-center justify-center rounded-full bg-light-coral w-[56px] h-[56px] p-5">
-              <img className="w-4" src={Cross} alt="" />
-            </div>
-          </div>
+          <ProfileCard
+            name="Christian Duncan"
+            headshot={Christian}
+            position="Co-founder & COO"
+            quote="“Technology is at the forefront of enabling distributed teams. That's where we come in.”"
+          />
 
-          <div className="relative h-[281px] flex flex-col items-center gap-4 bg-dark-green px-6 py-8">
-            <img
-              className="rounded-full w-24 border-2 border-rapture-blue"
-              src={Cruz}
-              alt=""
-            />
-            <div>
-              <p className="text-body-1 text-rapture-blue">Cruz Hamer</p>
-              <p className="text-body-2 italic">Co-founder & CTO</p>
-            </div>
-            <div className="absolute bottom-[-25px] flex items-center justify-center rounded-full bg-light-coral w-[56px] h-[56px] p-5">
-              <img className="w-4" src={Cross} alt="" />
-            </div>
-          </div>
+          <ProfileCard
+            name="Cruz Hamer"
+            headshot={Cruz}
+            position="Co-founder & CTO"
+            quote="“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”"
+          />
 
-          <div className="relative h-[281px] flex flex-col items-center gap-4 bg-dark-green px-6 py-8">
-            <img
-              className="rounded-full w-24 border-2 border-rapture-blue"
-              src={Drake}
-              alt=""
-            />
-            <div>
-              <p className="text-body-1 text-rapture-blue">Drake Heaton</p>
-              <p className="text-body-2 italic">Business Development Lead</p>
-            </div>
-            <div className="absolute bottom-[-25px] flex items-center justify-center rounded-full bg-light-coral w-[56px] h-[56px] p-5">
-              <img className="w-4" src={Cross} alt="" />
-            </div>
-          </div>
+          <ProfileCard
+            name="Drake Heaton"
+            headshot={Drake}
+            position="Business Development Lead"
+            quote="“Unique perspectives shape unique products, which is what you need to survive these days.” "
+          />
 
-          <div className="relative h-[281px] flex flex-col items-center gap-4 bg-dark-green px-6 py-8">
-            <img
-              className="rounded-full w-24 border-2 border-rapture-blue"
-              src={Griffin}
-              alt=""
-            />
-            <div>
-              <p className="text-body-1 text-rapture-blue">Griffin Wise</p>
-              <p className="text-body-2 italic">Lead Marketing</p>
-            </div>
-            <div className="absolute bottom-[-25px] flex items-center justify-center rounded-full bg-light-coral w-[56px] h-[56px] p-5">
-              <img className="w-4" src={Cross} alt="" />
-            </div>
-          </div>
+          <ProfileCard
+            name="Griffin Wise"
+            headshot={Aden}
+            position="Lead Marketing"
+            quote="“Empowered teams create truly amazing products. Set the north star and let them follow it.”"
+          />
 
-          <div className="relative h-[281px] flex flex-col items-center gap-4  ">
-            <div className="flex flex-col items-center gap-4 bg-dark-green w-[327px] h-[253px] px-6 py-8" >
-              <img
-                className="rounded-full w-24 border-2 border-rapture-blue"
-                src={Aden}
-                alt=""
-              />
-              <div>
-                <p className="text-body-1 text-rapture-blue">Aden Allan</p>
-                <p className="text-body-2 italic">Head of Talent</p>
-              </div>
-            </div>
+          <ProfileCard
+            name="Aden Allan"
+            headshot={Aden}
+            position="Head of Talent"
+            quote="“Empowered teams create truly amazing products. Set the north star and let them follow it.”"
+          />
 
-            <div className="absolute bottom-0 flex items-center justify-center rounded-full bg-light-coral w-[56px] h-[56px] p-5">
-              <img className="w-4" src={Cross} alt="" />
-            </div>
-          </div>
           <img className="absolute bottom-0 right-0" src={Pattern1} alt="" />
         </div>
       </section>
