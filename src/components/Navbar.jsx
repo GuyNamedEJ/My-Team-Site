@@ -3,6 +3,7 @@ import Hamburger from "../assets/icon-hamburger.svg";
 import Close from "../assets/icon-close.svg";
 import { useState } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between mb-20 overflow-hidden">
+    <nav className="flex items-center justify-between mb-20 px-6 ">
       <img className="w-32" src={Logo} alt="My Team Logo" />
 
       <img
@@ -37,8 +38,14 @@ export default function Navbar() {
         />
         <div className="px-12">
           <ul className="flex flex-col gap-6 mb-9 text-body-1 ">
-            <li>home</li>
-            <li>about</li>
+            <li>
+              <Link onClick={toggleMenu} to="/">
+                home
+              </Link>
+            </li>
+            <li><Link onClick={toggleMenu} to="/about">
+                about
+              </Link></li>
           </ul>
           <Button className="w-full text-body-1" primaryLight>
             contact us

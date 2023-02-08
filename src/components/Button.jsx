@@ -8,7 +8,7 @@ export default function Button({
 }){
     const classes = className(rest.className,'flex items-center justify-center px-8 py-3 border rounded-full border-2 text-center', {
         'border-white-500 text-white' : primaryLight,
-        'border-sac-state-green' : primaryDark, 
+        'border-sac-state-green text-sac-state-green' : primaryDark, 
     })
 
     return <button {...rest}className={classes}>
