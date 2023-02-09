@@ -11,30 +11,30 @@ import GetStarted from "../components/GetStarted";
 
 export default function Home() {
   return (
-    <div>
-      <section className="flex flex-col gap-[18px] text-center font-bold px-6 bg-home-pattern-2 bg-no-repeat bg-bottom h-[455px] bg-midnight-green">
-        <h1 className="text-mobile-h1">
+    <div className="text-white">
+      <section className="flex flex-col gap-[18px] text-center font-bold px-6 bg-home-pattern-2 bg-no-repeat bg-bottom h-[455px] bg-midnight-green items-center">
+        <h1 className="text-mobile-h1 md:text-h1-sm">
           Find the <br /> best <span className="text-light-coral">talent</span>
         </h1>
-        <p className="text-body-2 font-semibold mb-24">
+        <p className="text-body-2 font-semibold mb-24 w-[457px]">
           Finding the right people and building high performing teams can be
           hard. Most companies aren’t tapping into the abundance of global
           talent. We’re about to change that.
         </p>
       </section>
 
-      <section className="bg-sac-state-green bg-home-pattern-3 bg-no-repeat bg-[top_right_-100px] px-6 h-[1073px] pt-16">
+      <section className="bg-sac-state-green bg-home-pattern-3 bg-no-repeat bg-[top_right_-100px] px-6 py-16 md:px-24 md:py-24">
         <div className="mb-14">
           <hr className="w-12 border-none h-1 bg-light-coral mb-8" />
-          <h2 className="text-mobile-h2 w-[240px]">
+          <h2 className="font-bold text-mobile-h2 w-[240px] md:w-[445px]">
             Build & manage distributed teams like no one else.
           </h2>
         </div>
 
-        <div className="flex flex-col items-center justify-center text-center gap-12 ">
-          <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center justify-center text-center gap-12 md:text-left ">
+          <div className="flex flex-col items-center gap-4 md:flex-row ">
             <img src={Person} alt="" />
-            <div>
+            <div >
               <p className="text-body-1 text-light-coral">
                 Experienced Individuals
               </p>
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 md:flex-row">
             <img src={Gear} alt="" />
             <div>
               <p className="text-body-1 text-light-coral">Easy to Implement</p>
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 md:flex-row">
             <img src={Chart} alt="" />
             <div>
               <p className="text-body-1 text-light-coral">
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative flex flex-col bg-deep-jungle-green h-[1410px] text-center bg-no-repeat px-6 pt-[140px]">
+      <section className="relative flex flex-col bg-deep-jungle-green text-center bg-no-repeat px-6 pt-[140px] py-[164px] md:p-24">
         <img className="absolute top-0 left-0" src={Pattern1} alt="" />
         <h2 className="text-mobile-h2 font-bold mb-12">
           Delivering real results for top companies. Some of our{" "}

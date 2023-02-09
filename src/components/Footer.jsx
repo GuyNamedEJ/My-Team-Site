@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center px-6 py-[66px] gap-6 bg-dark-green">
+    <footer className="text-white flex flex-col items-center justify-center px-6 py-[66px] gap-6 bg-dark-green md:flex-row md:px-9 md:py-14 md:justify-between">
       <div className="flex flex-col gap-6 w-[107px]">
         <img className="w-24 self-center" src={Logo} alt="" />
         <ul className="flex justify-between text-body-2">
@@ -23,7 +23,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="text-center text-white text-body-2 font-semibold">
+      <div className="text-center text-[#979797] text-body-2 font-semibold">
         <p>987 Hillcrest Lane</p>
         <p>Irvine, CA</p>
         <p>California, 92714</p>
@@ -42,7 +42,7 @@ export default function Footer() {
             <img src={Twitter} alt="" />
           </li>
         </ul>
-        <p>Copyright 2020. All Rights Reserved</p>
+        <p className="text-[#979797]">Copyright 2020. All Rights Reserved</p>
       </div>
     </footer>
   );

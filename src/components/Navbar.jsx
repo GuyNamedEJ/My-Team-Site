@@ -13,16 +13,27 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between mb-20 px-6 ">
+    <nav className="text-white flex items-center justify-between px-6 ">
       <img className="w-32" src={Logo} alt="My Team Logo" />
 
       <img
+        className="md:hidden"
         src={Hamburger}
         alt=""
         onClick={() => {
           setIsOpen(!isOpen);
         }}
       />
+
+      <div className="items-center justify-between w-full ml-12 hidden md:flex">
+        <ul className="flex gap-10">
+          <li>home</li>
+          <li>about</li>
+        </ul>
+        <Button className="w-full text-body-1" primaryLight>
+            contact us
+          </Button>
+      </div>
 
       {/**Mobile Menu */}
       <div
@@ -47,7 +58,7 @@ export default function Navbar() {
                 about
               </Link></li>
           </ul>
-          <Button className="w-full text-body-1" primaryLight>
+          <Button onClick={toggleMenu} className="w-full text-body-1" primaryLight>
             contact us
           </Button>
         </div>

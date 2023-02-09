@@ -23,6 +23,7 @@ module.exports = {
       "body-2": ["15px", "25px"],
       "mobile-h1": ["40px", "40px"],
       "mobile-h2": ["32px", "32px"],
+      "mobile-h3": ["32px", "48px"],
     },
 
     backgroundImage: {
