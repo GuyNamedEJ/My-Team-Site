@@ -38,6 +38,7 @@ module.exports = {
       "contact-pattern": "url('assets/bg-pattern-about-2-contact-1.svg')",
       quotes: "url('assets/icon-quotes.svg')",
     },
+    
   },
   plugins: [],
 };

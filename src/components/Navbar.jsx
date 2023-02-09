@@ -27,12 +27,18 @@ export default function Navbar() {
 
       <div className="items-center justify-between w-full ml-12 hidden md:flex">
         <ul className="flex gap-10">
-          <li>home</li>
-          <li>about</li>
+          <li>
+            <Link to="/">
+              home
+            </Link>
+          </li>
+          <li><Link to="/about">
+              about
+            </Link></li>
         </ul>
         <Button className="w-full text-body-1" primaryLight>
-            contact us
-          </Button>
+          contact us
+        </Button>
       </div>
 
       {/**Mobile Menu */}
@@ -54,11 +60,17 @@ export default function Navbar() {
                 home
               </Link>
             </li>
-            <li><Link onClick={toggleMenu} to="/about">
+            <li>
+              <Link onClick={toggleMenu} to="/about">
                 about
-              </Link></li>
+              </Link>
+            </li>
           </ul>
-          <Button onClick={toggleMenu} className="w-full text-body-1" primaryLight>
+          <Button
+            onClick={toggleMenu}
+            className="w-full text-body-1"
+            primaryLight
+          >
             contact us
           </Button>
         </div>

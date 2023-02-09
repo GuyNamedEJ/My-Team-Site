@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="text-white flex flex-col items-center justify-center px-6 py-[66px] gap-6 bg-dark-green md:flex-row md:px-9 md:py-14 md:justify-between">
+    <footer className="text-white flex flex-col items-center justify-center px-6 py-[66px] gap-6 bg-dark-green lg:flex-row lg:px-9 lg:py-14 lg:justify-between">
       <div className="flex flex-col gap-6 w-[107px]">
         <img className="w-24 self-center" src={Logo} alt="" />
         <ul className="flex justify-between text-body-2">

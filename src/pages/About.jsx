@@ -28,8 +28,8 @@ export default function About() {
       </section>
 
       <section className="relative bg-deep-jungle-green bg-contact-pattern bg-no-repeat bg-[top_-100px_left_-100px] text-center px-6 py-24 md:bg-[top_0px_left_-100px]">
-        <h2 className="text-mobile-h2 mb-16">Meet the directors</h2>
-        <div className="flex flex-col gap-14 md:flex-row md:flex-wrap md:justify-center md:gap-4 md:items-center">
+        <h2 className="text-mobile-h2 mb-16 lg:text-h2">Meet the directors</h2>
+        <div className="flex flex-col gap-14 md:flex-row md:flex-wrap md:justify-center md:gap-4 md:items-center lg:grid lg:grid-cols-[repeat(3,327px)] lg:gap-30px">
           <ProfileCard
             name="Nikita Marks"
             headshot={Nikita}
@@ -77,7 +77,9 @@ export default function About() {
       </section>
 
       <section className="bg-sac-state-green text-center px-6 py-24 flex flex-col items-center gap-16 bg-home-pattern-3 bg-no-repeat bg-[top_-150px_left_-100px] md:bg-[top_-150px_left_0px]">
-        <h2 className="text-mobile-h2 font-bold">Some of our clients</h2>
+        <h2 className="text-mobile-h2 font-bold lg:text-h2">
+          Some of our clients
+        </h2>
         <div className="flex flex-col items-center justify-center gap-12 w-[162px] md:flex-row md:px-9">
           <img className="w-32" src={Verge} alt="" />
           <img className="w-32" src={Jakarta} alt="" />
