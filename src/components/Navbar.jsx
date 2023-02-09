@@ -41,12 +41,18 @@ export default function Navbar() {
         </Button>
       </div>
 
+      <div className={`z-[1] fixed top-0 left-0 bg-[rgba(0,0,0,0.5)] w-full h-full ${
+          isOpen ? "block" : "hidden"
+        }`}>
+        
+      </div>
       {/**Mobile Menu */}
       <div
-        className={`absolute bg-police-blue w-[255px] h-full right-0 top-0 pt-14 flex flex-col transition-all duration-300 ease-in-out bg-mobile-nav bg-no-repeat bg-[bottom_right_-100px] z-10 ${
+        className={`z-5 fixed bg-police-blue w-[255px] h-full right-0 top-0 pt-14 flex flex-col transition-all duration-300 ease-in-out bg-mobile-nav bg-no-repeat bg-[bottom_right_-100px] z-10 ${
           isOpen ? "block" : "hidden"
         }`}
       >
+      
         <img
           className="self-end mr-[25px] mb-[39px]"
           src={Close}
